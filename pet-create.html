@@ -22,46 +22,48 @@
         </header>
     <main>
         <h1>Create Your Virtual Pet</h1>
-        <fieldset>
-            <legend >what type of Pet:</legend> 
-            <label for="dog">Dog:</label>
-            <input type="radio" id="dog" name="breed" value="dog">
-            <label for="cat">Cat:</label>
-            <input type="radio" id="Cat" name="breed" value="cat">
-        </fieldset>
-        <p>
-            <label for="breed">Pets Breed:</label>
-            <select id="breed">
-                <option value="Calico">Calico</option>
-                <option value="Tabby">Tabby</option>
-                <option value="Corgi">Corgi</option>
-            </select>
-        </p>
-        <p>
-            <label for="name">Pet's Name:</label>
-            <input type="text" id="name">
-        </p>
-        <p>
-            <label for="adoption-date">Virtual Adaption Date:</label>
-            <input type="date" id="adoption-date">
-        </p>
-        <p>
-            <label for="age">Pets Age:</label>
-            <input type="number" id="age">
-        </p>
-        <p>
-            <label for="backstory">Back Story</label>
-            <textarea id="backstory" rows="5"></textarea>
-        </p>
-        <p>
-            <label for="owner-email">Owners's Email</label>
-            <input type="email" id="owner-email">
-        </p>        
-         <p>     
-        <input type="checkbox" id="mail-list">
-        <label for="mail-list">Add me to Mailing List:</label>
-        </p>
-        <button>Save </button>
+        <form action="" method="get">
+            <fieldset>
+                <legend >what type of Pet:</legend> 
+                <label for="dog">Dog:</label>
+                <input type="radio" id="dog" name="breed" value="dog">
+                <label for="cat">Cat:</label>
+                <input type="radio" id="Cat" name="breed" value="cat">
+            </fieldset>
+            <p>
+                <label for="breed" name="breed-name">Pets Breed:</label>
+                <select id="breed">
+                    <option value="Calico">Calico</option>
+                    <option value="Tabby">Tabby</option>
+                    <option value="Corgi">Corgi</option>
+                </select>
+            </p>
+            <p>
+                <label for="name">Pet's Name:</label>
+                <input type="text" id="name" required>
+            </p>
+            <p>
+                <label for="adoption-date">Virtual Adaption Date:</label>
+                <input type="date" id="adoption-date" name="adoption-date">
+            </p>
+            <p>
+                <label for="age">Pets Age:</label>
+                <input type="number" id="age" name="age">
+            </p>
+            <p>
+                <label for="backstory">Back Story</label>
+                <textarea id="backstory" rows="5" name="backstory"></textarea>
+            </p>
+            <p>
+                <label for="owner-email">Owners's Email</label>
+                <input type="email" id="owner-email" name="owner-email">
+            </p>        
+            <p>     
+            <input type="checkbox" id="mail-list" name="mail-list" value="true">
+            <label for="mail-list">Add me to Mailing List:</label>
+            </p>
+            <button>Save </button>
+        </form>
     </main>
     <br>
 
