@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport"  content="Width=Device-Width Initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <title>Virtual Pet Cafe</title>
-        <meta name="author" content="Rishi De">
-    </head>
-    <body>
-        <header>
-            <nav>           
-                <figure>
-                    <img src="images/pets.jpg" alt="pets image" height="100" width="150">
-                    <figcaption>Virtual Pet Cafe</figcaption>
-                </figure>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pet-list.html">Meet Our Virtual Pets</a></li>
-                    <li><a href="pet-create.html">Create My Pet</a></li>
-                    <li><a href="#">View My pets</a></li>
-                </ul>
-            </nav>              
-        </header>
-        <main>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="Width=Device-Width Initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Virtual Pet Cafe</title>
+    <meta name="author" content="Rishi De">
+</head>
+
+<body class="bg-light">
+    <header class="bg-secondary pt-4 ps-4">
+        <nav>
+            <figure>
+                <img src="images/pets.jpg" alt="pets image" height="100" width="150">
+                <figcaption class="text-white">Virtual Pet Cafe</figcaption>
+            </figure>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pet-list.html">Meet Our Virtual Pets</a></li>
+                <li><a href="pet-create.html">Create My Pet</a></li>
+                <li><a href="#">View My pets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-4">
+        <div class="container">
             <article>
-            <h1>Welcome to the Virtual Pet Cafe !</h1>
-            
-        <p>
-            Our goal is to provide a wonderful place for you to relax and enjoy our amazing virtual pets. 
-            Here you can play with our pets or create your own pets for a custom experience.
-        </p>
+                <h1 class="text-secondary">Welcome to the Virtual Pet Cafe !</h1>
 
-        <p>
-            No room for a big dog? No problem. Your virtual pets fit anywhere. Travel too much? We've got you covered.
-            Your virtual pets can go anywhere you have an internet connection. Hate that smelly litter box?
-            One of the best things about a virtual pet is that they don't need one!
-        </p>
-        <p>
-            <a href="pet-list.html">Find your Best Friend, Today</a>
-        </p>
+                <p>
+                    Our goal is to provide a wonderful place for you to relax and enjoy our amazing virtual pets.
+                    Here you can play with our pets or create your own pets for a custom experience.
+                </p>
 
-        <section>
-            <h3>Tell us more about you:</h3>
+                <p>
+                    No room for a big dog? No problem. Your virtual pets fit anywhere. Travel too much? We've got you
+                    covered.
+                    Your virtual pets can go anywhere you have an internet connection. Hate that smelly litter box?
+                    One of the best things about a virtual pet is that they don't need one!
+                </p>
+                <p>
+                    <a href="pet-list.html">Find your Best Friend, Today</a>
+                </p>
+
+                <section>
+                    <h3 class="text-secondary">Tell us more about you:</h3>
+                    <p>
+                        <label for="user-name">User Name :</label>
+                        <input id="user-name" maxlength="12" required>
+                    </p>
+
+                    <p>
+                        <label for="favorite-pet-type">Favorite Type of Pet :</label>
+                        <input id="favorite-pet-type">
+                    </p>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer class="border-top border-light mt-4 fw-light">
+        <div class="container-fluid">
             <p>
-                <label for="user-name">User Name :</label>
-                <input id="user-name" maxlength="12" required>
+                All content on this site &copy;Copyright - Virtual Pet Cafe, Inc.Feel Free to contact us any any time
+                for you Pet food suplies.
             </p>
+        </div>
+    </footer>
+</body>
 
-            <p>
-                <label for="favorite-pet-type">Favorite Type of Pet :</label>
-                <input id="favorite-pet-type">
-            </p>
-        </section>
-        </article>
-        </main> 
-    <footer>
-        All content on this site &copy;Copyright - Virtual Pet Cafe, Inc
-    </footer> 
-    </body> 
 </html>
